@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
+@font-face { font-family: 'Calculator'; src: url("./assets/calculator/Calculator.ttf") format(ttf); }
+ 
+
+*{  /*resetar o navegador*/
+
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+html, body{ 
+
+    font-family: Arial, Helvetica, sans-serif; /*fontes*/
+    color: rgb(255, 252, 252); /*cor da fonte*/
+    background-color: #ffffff;
+
+    font-size: 62.5%;
+    text-rendering: optimizeLegibility;
+
+    height: 100%;
+    width: 100%;
+        
+}
+
+input{
+
+    background-color: #000000;
+    border-left: 1em;
+    border: none;
+    color: white;
+    padding: 1em;
+
+    border-radius: 1em 1em 0em 0em;
+
+}
+
+#display{
+
+    max-width: 28em;
+    max-height: 19em;
+
+    height: 2.5em;
+    width: 12em;
+
+    font-size: 5em;
+
+    font-family: 'Calculator';
+
+}
+
+
+
+main{
+
+    height: 90%;
+    width: 100%;
+ 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+
+
+}
+
+#corpo{
+
+    background: #625a5a;
+
+    display: flex;
+    align-items: center;
+    margin-right: 43rem;
+    flex-direction: column;
+
+    padding-top: 5em;
+    padding-bottom: 5em;
+
+    width: 70em;
+
+    border-radius: 10%;
+
+}
+
+
+
+#teclado{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 70em;
+
+    gap: 0.1em;
+    border: none;
+
+    margin-left: 9.8em;
+
+
+
+
+}
+
+.botoes{
+
+    height: 7em;
+    width: 7em;
+
+    border: none;
+
+    background-color: #1a1a1a;
+    color: #ffffff;
+
+
+}
+
+#footer{
+    color: #000000;
+    margin-top: 5em;
+    font-size: 2em;
+    background-color: rgb(146, 43, 43);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -43rem;
+    height: 40rem;
+    margin-bottom: 6rem;
+    width: 40rem;
+    border-radius: 0rem 3rem 3rem 0rem;
+    
+
+    
+
+}
+
+#historico{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: aliceblue;
+    font-weight: 600;
+    height: 20rem;
+
+}
+
+#resultados{
+    display: flex;
+    align-items: center;
+    margin-top: -7rem;
+    flex-direction: column;
+    overflow: scroll;
+    width: 40rem;
+    height: 40rem;
+    overflow-x: hidden;
+    border-radius: 3rem;
+}
+p{
+    font-size: 2rem;
+}
